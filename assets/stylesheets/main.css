@@ -1,0 +1,522 @@
+body {
+    margin: 0px;
+    padding: 0px
+}
+
+
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.banner {
+    position: fixed;
+    width: 100%;
+}
+
+.header {
+    background-color: #181b1f;
+    width: 100%;
+}
+
+.logo {
+    width: 14.5%;
+    margin-left: 100px;
+}
+
+.logo img {
+    margin-left: 10%;
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.menu {
+    width: 70%;
+    margin-left: 45px;
+}
+
+.menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+}
+
+.menu ul li {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.menu ul li a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 15px 15px;
+    padding-bottom: 24px;
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 2px;
+}
+
+.menu ul li a:hover {
+    transition-duration: 0.0s;
+    border-top-color: goldenrod;
+    color: goldenrod;
+    background-color: #252b33;
+}
+
+.menu ul li:last-child {
+    position: relative;
+}
+
+.dropdown {
+    margin-left: -50%;
+    position: absolute;
+    display: none;
+    height: 300px;
+    overflow-y: scroll;
+    min-width: 200px;
+    z-index: 9999;
+}
+
+.menu ul li:hover .dropdown {
+    display: block;
+}
+
+
+.dropdown ul {
+    background-color: #181b1f;
+}
+
+.dropdown ul li {
+    display: block;
+    border-bottom-color: #3a3a3a;
+    border-bottom-style: solid;
+    border-width: 0.5px;
+    margin: 0px 8px;
+}
+
+.dropdown ul li:first-child {
+    margin-top: 0.1px;
+}
+
+.dropdown ul li a {
+    padding: 12px;
+}
+
+.dropdown ul li a:hover {
+    background-color: #181b1f;
+    border-top-color: transparent;
+    color: goldenrod;
+    margin: 0px 19px;
+}
+
+.menu2 {
+    width: 100%;
+    background-color: #252b33;
+    text-align: center;
+}
+
+
+.menu2 ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu2 ul li {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: center;
+}
+
+.menu2 {
+    width: 100%;
+}
+
+
+.menu2 ul li a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 0px 18px;
+    margin: 0px 2px;
+    padding: 10px;
+    margin: 0px 15px;
+}
+
+.menu2 ul li a i {
+    font-size: 1.2em;
+}
+
+.menu2 ul li a:hover {
+    color: goldenrod;
+}
+
+
+#leftSideBar {
+    margin-left: 5%;
+    background-color: #e6e6e6;
+    position: fixed;
+    width: 13%;
+    border-top: 2px solid goldenrod;
+    border-bottom: 1px solid #d7d7d7;
+    top: 100px;
+}
+
+#leftSideBar ul,
+#leftSideBar ul li {
+    margin: 0px;
+    padding: 0px;
+}
+
+#leftSideBar h3,
+#leftSideBar p {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.lsbHeader {
+    border-bottom: 1px solid #d7d7d7;
+}
+
+#leftSideBar p {
+    font-family: monospace;
+    font-size: 1.1em;
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+#leftSideBar h3 {
+    margin-top: 20px;
+}
+
+#leftSideBar ul {
+    list-style: none;
+    text-align: center;
+}
+
+#liveEvents {
+    text-transform: uppercase;
+    background-color: #ce1f41;
+    padding: 5px 0px 0px 4px;
+}
+
+#upcomingEvents {
+    text-transform: uppercase;
+    background-color: #1f7edf;
+    padding: 5px 0px 0px 4px;
+}
+
+#liveEvents h3,
+#liveEvents ul li h4,
+#liveEvents ul li p {
+    margin: 0px;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+#liveEvents ul li h4,
+#liveEvents ul li p,
+#liveEvents ul li span {
+    text-align: left;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+#liveEvents ul li p,
+#liveEvents ul li span {
+    font-family: monospace;
+}
+
+#liveEvents ul li a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: #e6e6e6;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+#liveEvents ul li a i {
+    color: goldenrod;
+    font-size: 2em;
+}
+
+#liveEvents ul li a i:hover {
+    color: #1f7edf;
+    font-size: 2em;
+}
+
+#upcomingEvents h3 {
+    /*    text-align: center;*/
+    margin: 0px;
+    padding: 5px 0px;
+}
+
+#upcomingEvents ul li a {
+    padding: 5px;
+    display: block;
+    background-color: #e6e6e6;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+}
+
+#upcomingEvents ul li a h4,
+#upcomingEvents ul li a p {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#sideBar_content {
+    position: fixed;
+    width: 13%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 76.9%;
+}
+
+.SBright {
+    width: 20%;
+    background-color: #e6e6e6;
+    border-top: 2px solid goldenrod;   
+    margin-top: 100px;
+}
+
+.SBright h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.SBrightHeader {
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.SBrightHeader ul,.SBright ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.SBright ul li {
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.SBrightSelectionStyle {
+    width: 100%;    
+}
+
+.SBrightSelectionStyle, .article p, .articleImage img {
+    padding: 0px;
+    margin: 0px;
+}
+
+.SBright ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    padding-right: 0px;
+    margin-right: 0px;
+    font-size: 14px;
+    margin: 0px 3px;
+    width : 95%;
+    background-color: white;
+}
+
+.article {
+    float: left;
+    width: 65%;
+}
+
+.articleImage {
+    float: right;
+    width: 32%;
+}
+
+.articleImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainContent {
+    margin: 0px;
+    margin-top: 130px;
+    margin-left: 300px;
+    margin-bottom: 200px;
+    float: left;
+    width: 60%;
+    background-color: white;
+    padding: 0px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.mainContent div h1 {
+    font-family: fantasy;
+    font-weight: 300;
+    text-decoration: underline;
+    letter-spacing: 1.5px;
+    margin: 0px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.mainContent iframe {
+    margin-left: 20px;
+}
+
+.mainContent div p {
+    margin: 20px;
+}
+
+.footer {
+    margin-bottom: 0px;
+    height: 55px;
+    width: 100%;
+    background-color: #181b1f;
+}
+
+.footer .logoAtFooter {
+    width: 17%;
+    height: 100%;
+    margin-left: 128px;
+}
+.footer .logoAtFooter img {
+    width: 100%;
+    padding-top: 9px;
+   
+}
+
+.footer div {
+    margin: 0px;
+    padding: 0px;
+}
+
+.followBanner {
+    width: 50%;
+}
+
+.followBanner h2 {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 15px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    color: white;
+    font-family: fantasy;
+    font-weight: 100;
+    letter-spacing: 2.5px;
+}
+
+.followBanner ul {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.followBanner ul li {
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+}
+
+.followBanner i {
+    font-size: 2em;
+    color: gray;
+    padding: 10px;
+    padding-top: 12px;
+}
+
+.followBanner i:hover {
+    color: white;
+}
+
+.followBanner ul li:first-child {
+    margin-left: 20px;
+}
+
+.author {
+    width: 15%;
+}
+
+.author a {
+    text-decoration: none;
+}
+
+.author a p {
+    color: white;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.author a p:hover {
+    color: goldenrod;
+}
+
+#searchBar {
+    background-image: url(assets/images/logo/Search2.png);
+    margin-top: 8px;
+    position: fixed;
+    width: 100px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+#searchBar:focus {
+    width: 250px;
+    transform-style: flat;
+    transition-duration: 1s;
+    outline: none;
+    border-color: goldenrod;
+}
+
+#sideBar_content::-webkit-scrollbar {
+    width: 5px; 
+}
+
+#sideBar_content::-webkit-scrollbar-track {
+    background-color: #d7d7d7;
+    border-radius: 15px;
+}
+
+#sideBar_content::-webkit-scrollbar-thumb:vertical {
+    background-color: #8c7676;
+    border-radius: 15px;
+	
+}
